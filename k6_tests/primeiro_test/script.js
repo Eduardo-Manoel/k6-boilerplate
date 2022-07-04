@@ -1,4 +1,4 @@
-import http from 'k6/http';
+import http from 'http/k6';
 import {sleep} from 'k6';
 
 //Init 
