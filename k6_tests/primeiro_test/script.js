@@ -1,10 +1,10 @@
-import http from 'http/k6';
+import https from 'k6/https';
 import {sleep} from 'k6';
 
 //Init 
 
 export default function (){
     //acontecem as execuções dos VUs
-    http.get('https://test.k6.io');
+    https.get('https://test.k6.io');
     sleep(1);
 }
